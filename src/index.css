@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-dark: #AA7C11;
+  --color-brand-gold-light: #F3E5AB;
+  --color-brand-blush: #FAF0EC;
+  --color-brand-champagne: #FDF9F5;
+  --color-brand-charcoal: #1E1C1A;
+  --color-brand-cream: #FCFAF6;
+  --color-brand-rose: #C08A7C;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-brand-cream);
+    color: var(--color-brand-charcoal);
+    font-family: var(--font-sans);
+  }
+  
+  /* Selection Highlight */
+  ::selection {
+    background-color: var(--color-brand-gold-light);
+    color: var(--color-brand-charcoal);
+  }
+}
+
+/* Beautiful custom animations & helpers */
+.text-stroke-gold {
+  -webkit-text-stroke: 1px var(--color-brand-gold);
+  color: transparent;
+}
+
+/* Smooth drag cursor for the image comparison slider */
+.cursor-ew-resize {
+  cursor: ew-resize;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Glow & Grace Beauty Studio",
+  "description": "Premium demo website for Glow & Grace Beauty Studio, a luxury beauty salon in Civil Lines, Meerut, UP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
